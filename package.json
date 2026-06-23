@@ -17,5 +17,8 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.2",
     "vite": "^8.0.16"
-  }
+  },
+  {
+  "homepage": "https://shafik86.github.io/MyPortFolio-React"
+}
 }
