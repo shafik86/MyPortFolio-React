@@ -3,22 +3,24 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+
+  "homepage": "https://shafik86.github.io/MyPortFolio-React",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src"
   },
+
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2"
   },
+
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.2",
-    "vite": "^8.0.16"
-  },
-  {
-  "homepage": "https://shafik86.github.io/MyPortFolio-React"
-}
+    "vite": "^6.0.16"
+  }
 }
