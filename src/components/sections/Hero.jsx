@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="hero-grid">
           <div className="hero-photo">
             <div className="hero-photo-glow" />
-            <img src="/images/NIkShafik Banner.png" alt={profile.name} />
+            <img src="/MyPortFolio-React/images/NIkShafik Banner.png" alt={profile.name} />
           </div>
 
           <div className="hero-inner">

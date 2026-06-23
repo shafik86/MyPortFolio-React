@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <img src="/images/nasadef_logo_white.png" alt="Nasa Def" />
+            <img src="/MyPortFolio-React/images/nasadef_logo_white.png" alt="Nasa Def" />
             <p>
               Leading AI-First Enterprise Solutions Provider. Transforming
               industries through innovative IoT and AI technology.
