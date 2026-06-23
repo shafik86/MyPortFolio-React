@@ -1,0 +1,207 @@
+/* =========================================================================
+   Global base + shared layout primitives
+   ========================================================================= */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  transition: background var(--t), color var(--t);
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+
+h1, h2, h3, h4, h5 { line-height: 1.2; margin: 0 0 0.5em; font-weight: 700; }
+p { margin: 0 0 1rem; }
+
+::selection { background: var(--tech-blue); color: #fff; }
+
+/* ---- Layout ---- */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section { padding: 5.5rem 0; position: relative; }
+.section--alt { background: var(--bg-alt); }
+
+.section-head { text-align: center; max-width: 720px; margin: 0 auto 3.25rem; }
+.section-head h2 {
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  margin-bottom: 0.6rem;
+}
+.section-head p { color: var(--text-muted); font-size: 1.1rem; margin: 0; }
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tech-blue);
+  margin-bottom: 0.85rem;
+}
+
+/* ---- Text helpers ---- */
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.muted { color: var(--text-muted); }
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1.5px solid transparent;
+  transition: transform var(--t-fast), box-shadow var(--t-fast), background var(--t-fast), color var(--t-fast);
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--gradient); color: #fff; box-shadow: var(--shadow-md); }
+.btn-primary:hover { box-shadow: var(--shadow-lg); }
+.btn-light { background: #fff; color: var(--tech-blue); box-shadow: var(--shadow-sm); }
+.btn-outline { background: transparent; border-color: currentColor; }
+.btn-ghost { background: var(--surface-2); color: var(--text); border-color: var(--border); }
+.btn-ghost:hover { border-color: var(--tech-blue); color: var(--tech-blue); }
+.btn-block { width: 100%; justify-content: center; }
+.btn-sm { padding: 0.55rem 1.1rem; font-size: 0.85rem; }
+
+/* ---- Cards ---- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform var(--t), box-shadow var(--t), border-color var(--t);
+  height: 100%;
+}
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+
+.logo-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Blue (left) → white (center) → green (right) brand header. The white centre
+     keeps logos (designed for light bg) legible in both light and dark themes. */
+  background: linear-gradient(
+    100deg,
+    color-mix(in srgb, var(--tech-blue) 22%, #fff) 0%,
+    #ffffff 50%,
+    color-mix(in srgb, var(--tech-green) 22%, #fff) 100%
+  );
+  border-bottom: 1px solid var(--border);
+  padding: 1.4rem 1.75rem;
+  position: relative;
+}
+/* Subtle brand tint at the top edge so every logo frame reads the same. */
+.logo-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: var(--gradient);
+  opacity: 0.85;
+}
+/* Constrain logos to a consistent visual size so big & small logos sit
+   balanced in equal-height frames (object-fit keeps aspect ratio). */
+.logo-frame img {
+  max-width: 82%;
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ---- Badges / chips ---- */
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.32rem 0.7rem;
+  border-radius: var(--radius-pill);
+  background: var(--gradient-soft);
+  color: var(--tech-blue);
+  border: 1px solid var(--border);
+}
+.chip--neutral { background: var(--surface-2); color: var(--text-muted); }
+
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-pill);
+  background: rgba(0, 168, 107, 0.12);
+  color: var(--tech-green-dark);
+}
+[data-theme='dark'] .badge-status { color: var(--tech-green); }
+.badge-status::before {
+  content: '';
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--tech-green);
+  animation: pulseDot 2s infinite;
+}
+
+/* ---- Grid ---- */
+.grid { display: grid; gap: 1.5rem; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 900px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .section { padding: 4rem 0; }
+}
+
+/* ---- Accent colour map for icon tiles ---- */
+.accent-blue  { --accent: var(--c-blue); }
+.accent-green { --accent: var(--c-green); }
+.accent-amber { --accent: var(--c-amber); }
+.accent-cyan  { --accent: var(--c-cyan); }
+.accent-red   { --accent: var(--c-red); }
+.accent-slate { --accent: var(--c-slate); }
+
+.icon-tile {
+  width: 58px; height: 58px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+  background: var(--accent, var(--tech-blue));
+  box-shadow: 0 8px 20px -6px var(--accent, var(--tech-blue));
+  flex-shrink: 0;
+}
+.icon-tile--soft {
+  background: color-mix(in srgb, var(--accent, var(--tech-blue)) 14%, transparent);
+  color: var(--accent, var(--tech-blue));
+  box-shadow: none;
+}

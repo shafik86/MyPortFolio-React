@@ -1,0 +1,61 @@
+export const clientsData = [
+  {
+    id: 1,
+    name: 'SBTAPE Sdn Bhd',
+    logo: '/images/sbtape_logo.png',
+    industry: 'Manufacturing',
+    project: 'Coating Production System',
+    description: 'Maintain and add new features to comply with user needs.',
+    tech: ['.NET', 'C#', 'SQL Server'],
+  },
+  {
+    id: 2,
+    name: 'JPNIN',
+    logo: '/images/jpnin_logo.png',
+    industry: 'Government Agency',
+    project: 'E-Fokus Mapping',
+    description: 'Mapping and matching with analysis of integration (perpaduan) issues.',
+    link: 'efokus.jpnin.gov.my',
+    tech: ['MAPS', 'Analytics'],
+  },
+  {
+    id: 3,
+    name: 'IWK',
+    logo: '/images/iwk_logo.png',
+    industry: 'Indah Water Konsortium',
+    project: 'New Billing System',
+    description: 'All-in-one internal ERP-style system for operations.',
+    tech: ['ERP', '.NET Core'],
+  },
+  {
+    id: 4,
+    name: 'RELA',
+    logo: '/images/rela_logo.png',
+    industry: 'Jabatan Sukarelawan Malaysia',
+    project: 'Mapping and Predict',
+    description:
+      'Mapping all cases related to members to count workload and check nearest location.',
+    tech: ['Mapping', 'Location AI'],
+  },
+  {
+    id: 5,
+    name: 'Felcra Berhad',
+    logo: '/images/felcra_logo.png',
+    industry: 'Agriculture Development',
+    project: 'Device Farmsense',
+    description:
+      'Detect and warn farmers of wild animals such as elephants trespassing on palm oil plantations.',
+    tech: ['IoT Sensors', 'AI Detection'],
+  },
+  {
+    id: 6,
+    name: 'Tradewinds',
+    logo: '/images/tradewinds_logo.png',
+    industry: 'Plantation & Agriculture',
+    project: 'Farm Guard with Drone Activation',
+    description:
+      'AI camera-based detection that triggers drone activation, with a server monitoring dashboard for real-time farm security.',
+    link: 'apps.nasadef.com.my',
+    tech: ['AI Camera', 'Drone', 'Node.js', 'React'],
+  },
+]

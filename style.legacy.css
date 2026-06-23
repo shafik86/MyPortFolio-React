@@ -1,0 +1,236 @@
+/* Corporate Portfolio CSS - Tech Blue & Green Theme */
+
+:root {
+    --tech-blue: #0066cc;
+    --tech-blue-dark: #004c99;
+	--tech-blue-light: #3396D3;
+    --tech-green: #00a86b;
+    --tech-green-dark: #008556;
+    --corporate-gray: #2c3e50;
+    --light-gray: #ecf0f1;
+    --custom-gradient: linear-gradient(135deg, var(--tech-blue) 0%, var(--tech-green) 100%);
+}
+
+[data-bs-theme="dark"] {
+    --tech-blue: #3399ff;
+    --tech-blue-dark: #0066cc;
+    --tech-green: #00cc88;
+    --tech-green-dark: #00a86b;
+    --corporate-gray: #34495e;
+    --light-gray: #2c3e50;
+}
+
+/* Utility Classes */
+.bg-gradient-primary { 
+    background: var(--custom-gradient) !important; 
+}
+
+.text-gradient { 
+    background: var(--custom-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-tech-blue { color: var(--tech-blue) !important; }
+.text-tech-green { color: var(--tech-green) !important; }
+.bg-tech-blue { background-color: var(--tech-blue) !important; }
+.bg-tech-green { background-color: var(--tech-green) !important; }
+
+.btn-gradient { 
+    background: var(--custom-gradient);
+    border: none;
+    color: white;
+}
+
+.btn-gradient:hover { 
+    opacity: 0.9;
+    color: white;
+}
+
+.btn-tech-blue {
+    background-color: var(--tech-blue) !important;
+    color: white !important;
+    border: none;
+}
+
+.btn-tech-blue:hover {
+    background-color: var(--tech-blue-dark) !important;
+    color: white !important;
+}
+.btn-tech-blue:active {
+background-color: var(--tech-blue-light) !important;
+}
+
+/* Navigation */
+.navbar { 
+    backdrop-filter: blur(10px);
+}
+
+.navbar-light {
+    background-color: rgba(248, 249, 250, 0.95) !important;
+}
+
+[data-bs-theme="dark"] .navbar {
+    background-color: rgba(33, 37, 41, 0.95) !important;
+}
+
+[data-bs-theme="dark"] .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Hero Section */
+.hero-bg {
+    background: var(--custom-gradient);
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Image Placeholders */
+.img-placeholder {
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(0, 168, 107, 0.1) 100%);
+    border: 2px dashed var(--tech-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tech-blue);
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+}
+
+.company-logo-placeholder {
+    width: 100%;
+    height: 120px;
+}
+
+.product-img-placeholder {
+    width: 100%;
+    height: 200px;
+}
+
+.profile-img-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Timeline - Simplified */
+.timeline {
+    position: relative;
+}
+
+/* Contact Form */
+#contact .form-control {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+}
+
+#contact .form-control:focus {
+    background: rgba(255, 255, 255, 0.3) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#contact .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Dark Mode */
+[data-bs-theme="dark"] .card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] .img-placeholder {
+    background: linear-gradient(135deg, rgba(51, 153, 255, 0.1) 0%, rgba(0, 204, 136, 0.1) 100%);
+    border-color: var(--tech-blue);
+}
+
+[data-bs-theme="dark"] .text-muted {
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+[data-bs-theme="dark"] .bg-body-secondary {
+    background-color: #1a1d20 !important;
+}
+
+[data-bs-theme="dark"] .bg-light {
+    background-color: rgba(52, 58, 64, 0.6) !important;
+}
+
+[data-bs-theme="dark"] .card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="dark"] body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .hero-bg {
+        min-height: 90vh;
+        padding: 2rem 0;
+    }
+    
+    .display-3 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.8rem;
+    }
+    
+    .display-6 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    #contact {
+        display: none;
+    }
+    
+    .hero-bg {
+        background: white;
+        color: black;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a !important;
+}
+
+footer h6 {
+    color: white !important;
+}
+
+footer a:hover {
+    color: var(--tech-blue) !important;
+}
+
+footer .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
