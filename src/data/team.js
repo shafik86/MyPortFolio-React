@@ -1,3 +1,5 @@
+import { IMAGES } from '../config/imageConfig.js'
+
 // Core team across the founder's ventures.
 // NOTE: Names/photos below are PLACEHOLDERS — replace with real team members.
 // `image` falls back to a generated initials avatar when the file is missing.
@@ -9,7 +11,7 @@ export const teamData = [
     company: 'Nasa Def Sdn Bhd',
     specialization: ['AI/IoT', 'Product Strategy', 'Full-Stack'],
     bio: 'Chief inventor and founder leading AI-driven enterprise and IoT security products.',
-    image: '/images/Shafik-Passport.png',
+    image: IMAGES.profile,
     linkedin: 'https://www.linkedin.com/in/nikshafik',
   },
   {
@@ -43,3 +45,4 @@ export const teamData = [
     linkedin: '',
   },
 ]
+

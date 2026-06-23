@@ -1,5 +1,7 @@
 // Core profile / personal info — single source of truth for the hero, about,
 // contact, footer and SEO blocks.
+import { IMAGES } from '../config/imageConfig.js'
+
 export const profile = {
   name: 'Nik Mohd Shafik Izwan',
   shortName: 'Nik Shafik',
@@ -7,7 +9,7 @@ export const profile = {
   tagline:
     'Transforming industries through AI-driven solutions and IoT innovation. Building the future with 13+ years of technology expertise.',
   role: 'Founder & CEO',
-  image: '/images/Shafik-Passport.png',
+  image: IMAGES.profile,
   age: 38,
   location: 'Seri Kembangan, Selangor',
   phone: '017-4511455',

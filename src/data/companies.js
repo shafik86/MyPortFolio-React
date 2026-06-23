@@ -1,9 +1,11 @@
+import { IMAGES } from '../config/imageConfig.js'
+
 export const companiesData = [
   {
     id: 1,
     name: 'Nasa Def Sdn Bhd',
     role: 'AI-First Enterprise Solutions Provider',
-    logo: '/images/nasadef_logo.png',
+    logo: IMAGES.nasadef,
     founded: 'October 2023',
     ssm: '202401043707',
     location: 'Kota Bharu, Kelantan',
@@ -18,7 +20,7 @@ export const companiesData = [
     id: 2,
     name: 'Izwan Systec Enterprise',
     role: 'R&D and Technology Innovation Hub',
-    logo: '/images/isystec_logo.png',
+    logo: IMAGES.isystec,
     founded: 'March 2021',
     ssm: '202103055724',
     location: 'Kota Bharu & Selangor',

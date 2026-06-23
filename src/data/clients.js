@@ -1,8 +1,10 @@
+import { IMAGES } from '../config/imageConfig.js'
+
 export const clientsData = [
   {
     id: 1,
     name: 'SBTAPE Sdn Bhd',
-    logo: '/images/sbtape_logo.png',
+    logo: IMAGES.sbtape,
     industry: 'Manufacturing',
     project: 'Coating Production System',
     description: 'Maintain and add new features to comply with user needs.',
@@ -11,7 +13,7 @@ export const clientsData = [
   {
     id: 2,
     name: 'JPNIN',
-    logo: '/images/jpnin_logo.png',
+    logo: IMAGES.jpnin,
     industry: 'Government Agency',
     project: 'E-Fokus Mapping',
     description: 'Mapping and matching with analysis of integration (perpaduan) issues.',
@@ -21,7 +23,7 @@ export const clientsData = [
   {
     id: 3,
     name: 'IWK',
-    logo: '/images/iwk_logo.png',
+    logo: IMAGES.iwk,
     industry: 'Indah Water Konsortium',
     project: 'New Billing System',
     description: 'All-in-one internal ERP-style system for operations.',
@@ -30,7 +32,7 @@ export const clientsData = [
   {
     id: 4,
     name: 'RELA',
-    logo: '/images/rela_logo.png',
+    logo: IMAGES.rela,
     industry: 'Jabatan Sukarelawan Malaysia',
     project: 'Mapping and Predict',
     description:
@@ -40,7 +42,7 @@ export const clientsData = [
   {
     id: 5,
     name: 'Felcra Berhad',
-    logo: '/images/felcra_logo.png',
+    logo: IMAGES.felcra,
     industry: 'Agriculture Development',
     project: 'Device Farmsense',
     description:
@@ -50,7 +52,7 @@ export const clientsData = [
   {
     id: 6,
     name: 'Tradewinds',
-    logo: '/images/tradewinds_logo.png',
+    logo: IMAGES.tradewinds,
     industry: 'Plantation & Agriculture',
     project: 'Farm Guard with Drone Activation',
     description:
@@ -59,3 +61,4 @@ export const clientsData = [
     tech: ['AI Camera', 'Drone', 'Node.js', 'React'],
   },
 ]
+

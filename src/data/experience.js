@@ -1,10 +1,12 @@
+import { IMAGES } from '../config/imageConfig.js'
+
 // Ordered most-recent first. `index` is the timeline node number shown on screen.
 export const experienceData = [
   {
     id: 8,
     index: '08',
     company: 'TCT Apps (Subsidiary of GoHub)',
-    logo: '/images/gohub_logo.png',
+    logo: IMAGES.gohub,
     position: 'Senior Software Engineer',
     duration: 'December 2025 - Present',
     current: true,
@@ -16,7 +18,7 @@ export const experienceData = [
     id: 7,
     index: '07',
     company: 'Asolute Sdn Bhd',
-    logo: '/images/asolute_logo.png',
+    logo: IMAGES.asolute,
     position: 'Software Engineer',
     duration: 'September 2025 - November 2025',
     description:
@@ -27,7 +29,7 @@ export const experienceData = [
     id: 6,
     index: '06',
     company: 'HPCS Sdn Bhd',
-    logo: '/images/hpcs_logo.png',
+    logo: IMAGES.hpcs,
     position: 'Back-End Developer',
     duration: 'June 2025 - August 2025',
     description:
@@ -38,7 +40,7 @@ export const experienceData = [
     id: 5,
     index: '05',
     company: 'Nasa Def Sdn Bhd',
-    logo: '/images/nasadef_logo.png',
+    logo: IMAGES.nasadef,
     position: 'Chief Inventor & Founder',
     duration: 'July 2024 - Present',
     current: true,
@@ -50,7 +52,7 @@ export const experienceData = [
     id: 4,
     index: '04',
     company: 'Cara Technologies Sdn Bhd',
-    logo: '/images/cara_logo.png',
+    logo: IMAGES.cara,
     position: 'Technology Product Manager',
     duration: 'December 2019 - May 2025',
     description:
@@ -61,7 +63,7 @@ export const experienceData = [
     id: 3,
     index: '03',
     company: 'SB Tape International Sdn Bhd',
-    logo: '/images/sbtape_logo.png',
+    logo: IMAGES.sbtape,
     position: 'IT Executive',
     duration: 'July 2014 - July 2018',
     description:
@@ -72,7 +74,7 @@ export const experienceData = [
     id: 2,
     index: '02',
     company: 'Vida Beauty Enterprise',
-    logo: '/images/vidabeauty_logo.png',
+    logo: IMAGES.vidabeauty,
     position: 'IT Marketing & Support',
     duration: 'July 2013 - June 2014',
     description:
@@ -83,7 +85,7 @@ export const experienceData = [
     id: 1,
     index: '01',
     company: 'De Pauh Garden Restaurant',
-    logo: '/images/depauh_logo.png',
+    logo: IMAGES.depauh,
     position: 'Admin Assistant & IT Support',
     duration: 'March 2013 - June 2014',
     description:
@@ -91,3 +93,4 @@ export const experienceData = [
     tech: ['POS Systems', 'HR Management', 'IT Support'],
   },
 ]
+

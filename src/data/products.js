@@ -1,9 +1,11 @@
+import { IMAGES } from '../config/imageConfig.js'
+
 export const productsData = [
   {
     id: 1,
     name: 'AISA',
     category: 'AI-driven Business Solutions',
-    image: '/images/Products/aisa_product.png',
+    image: IMAGES.aisa,
     description:
       'Intelligent platform for business process automation with advanced customer engagement capabilities.',
     features: [
@@ -20,7 +22,7 @@ export const productsData = [
     id: 2,
     name: 'Farm Sense',
     category: 'IoT Agriculture Security',
-    image: '/images/Products/farmsense_product.png',
+    image: IMAGES.farmsense,
     description:
       'Smart intrusion detection system designed specifically for agricultural environments, without harm to wildlife.',
     features: [
@@ -37,7 +39,7 @@ export const productsData = [
     id: 3,
     name: 'Farm Guard',
     category: 'Automated Farm Security',
-    image: '/images/Products/farmguard_product.png',
+    image: IMAGES.farmguard,
     description:
       'Comprehensive security platform with automated deterrent systems for farm protection.',
     features: [
@@ -54,7 +56,7 @@ export const productsData = [
     id: 4,
     name: 'WildSec',
     category: 'AI-Ready Wildlife Monitoring',
-    image: '/images/Products/wildsec design.png',
+    image: IMAGES.wildsec,
     description:
       'Solar-powered surveillance system with AI capabilities for wildlife and security monitoring. Detects, hears, senses and reports.',
     features: [
@@ -71,7 +73,7 @@ export const productsData = [
     id: 5,
     name: 'FloodSense',
     category: 'Smart Flood Monitoring',
-    image: '/images/Products/floodsense_product.png',
+    image: IMAGES.floodsense,
     description:
       'Government-grade flood monitoring and early warning system with predictive analytics. Get notice before the worst.',
     features: [
@@ -88,7 +90,7 @@ export const productsData = [
     id: 6,
     name: 'Elephant Pistol',
     category: 'Wildlife Deterrent Device',
-    image: '/images/Products/pistolgajah_product.png',
+    image: IMAGES.pistolgajah,
     description:
       'Non-lethal elephant deterrent system with sound and light activation for effective wildlife management.',
     features: [
@@ -102,3 +104,4 @@ export const productsData = [
     link: 'https://nasadef.com.my/index.html#contact',
   },
 ]
+

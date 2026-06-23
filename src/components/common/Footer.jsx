@@ -1,4 +1,5 @@
 import { profile } from '../../data/profile'
+import { IMAGES } from '../../config/imageConfig'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <img src="/MyPortFolio-React/images/nasadef_logo_white.png" alt="Nasa Def" />
+            <img src={IMAGES.nasadefWhite} alt="Nasa Def" />
             <p>
               Leading AI-First Enterprise Solutions Provider. Transforming
               industries through innovative IoT and AI technology.

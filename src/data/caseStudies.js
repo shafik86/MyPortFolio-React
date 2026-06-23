@@ -1,3 +1,5 @@
+import { IMAGES } from '../config/imageConfig.js'
+
 // Project showcases in Challenge → Solution → Results format.
 // Grounded in the founder's real products & client work (see clients.js,
 // products.js). Update `results`/`impactMetrics` as real figures are confirmed.
@@ -7,7 +9,7 @@ export const caseStudiesData = [
     title: 'Protecting Plantations from Elephant Intrusion',
     client: 'Felcra Berhad',
     industry: 'Agriculture',
-    image: '/images/Products/farmsense_product.png',
+    image: IMAGES.farmsense,
     challenge:
       'Palm oil plantations were suffering recurring crop damage and safety risks from wild elephants trespassing at night. Conventional fencing was costly, harmful to wildlife, and unreliable over large estate perimeters.',
     solution:
@@ -27,7 +29,7 @@ export const caseStudiesData = [
     title: 'Government-Grade Flood Early Warning',
     client: 'Public sector / disaster management',
     industry: 'Disaster Management',
-    image: '/images/Products/floodsense_product.png',
+    image: IMAGES.floodsense,
     challenge:
       'Communities in flood-prone areas lacked timely, reliable water-level data, leaving authorities and residents little time to react before flooding caused damage and disruption.',
     solution:
@@ -47,7 +49,7 @@ export const caseStudiesData = [
     title: 'Modernising a National Billing System',
     client: 'Indah Water Konsortium (IWK)',
     industry: 'Utilities',
-    image: '/images/Products/aisa_product.png',
+    image: IMAGES.aisa,
     challenge:
       'Operations relied on fragmented tools that slowed billing and internal workflows, making it hard to manage processes at national scale.',
     solution:
@@ -63,3 +65,4 @@ export const caseStudiesData = [
     ],
   },
 ]
+
