@@ -12,7 +12,7 @@ import './styles/components.css'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider>
-      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <BrowserRouter basename="/MyPortFolio-React/" future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <App />
       </BrowserRouter>
     </ThemeProvider>
