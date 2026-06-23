@@ -27,7 +27,7 @@ export const profile = {
   ],
   // Embedded Google Map of the residential / corporate location
   mapEmbed:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.029874!2d101.576388!3d3.005447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4a3b8e8e8e8d%3A0x8e8e8e8e8e8e8e8e!2sA-5-06%20Pangsapuri%20Belimbing%20Heights%2C%2043300%20Seri%20Kembangan%2C%20Selangor!5e0!3m2!1sen!2smy!4v1630000000000',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.8!2d101.7298419!3d3.0321674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2zM8KwMDEnNTUuOCJOIDEwMcKwNDMnNDcuOCJF!5e0!3m2!1sen!2smy!4v1630000000000',
 }
 
 export const heroStats = [
