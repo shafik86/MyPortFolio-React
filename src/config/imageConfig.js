@@ -6,7 +6,7 @@
  * - Custom domain: '/'
  */
 
-const BASE_PATH = '/MyPortFolio-React'
+const BASE_PATH = ''
 
 /**
  * Build complete image URL
