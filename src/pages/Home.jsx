@@ -4,6 +4,7 @@ import Hero from '../components/sections/Hero'
 import About from '../components/sections/About'
 import Leadership from '../components/sections/Leadership'
 import Impact from '../components/sections/Impact'
+import Projects from '../components/sections/Projects'
 import Companies from '../components/sections/Companies'
 import Products from '../components/sections/Products'
 import Clients from '../components/sections/Clients'
@@ -20,6 +21,7 @@ export default function Home() {
       <About />
       <Leadership />
       <Impact />
+      <Projects />
       <Companies />
       <Products />
       <Clients />

@@ -3,15 +3,38 @@ import { IMAGES } from '../config/imageConfig.js'
 // Ordered most-recent first. `index` is the timeline node number shown on screen.
 export const experienceData = [
   {
+    id: 10,
+    index: '10',
+    company: 'Nasa Def Sdn Bhd',
+    logo: IMAGES.nasadef,
+    position: 'Founder & Chief Executive Officer',
+    duration: 'July 2026 - Present (Full-time)',
+    current: true,
+    description:
+      'Leading Nasa Def full-time as CEO — driving company strategy, B2B partnerships and nationwide AI + IoT deployments, including the FELDA Farm Guard rollout across 42 schemes and the TDM Plantation Farm Guard AI + Starlink project.',
+    tech: ['Leadership', 'AI + IoT', 'B2B Strategy', 'Project Delivery'],
+  },
+  {
+    id: 9,
+    index: '09',
+    company: 'Izwan Systec Enterprise',
+    logo: IMAGES.isystec,
+    position: 'Chief Executive Officer',
+    duration: 'March 2021 - Present',
+    current: true,
+    description:
+      'Heading the R&D and innovation arm of the Nasa Def ecosystem — prototyping, hardware customisation and next-generation AI research that feeds directly into Nasa Def products.',
+    tech: ['R&D', 'Prototyping', 'AI Research'],
+  },
+  {
     id: 8,
     index: '08',
     company: 'TCT Apps (Subsidiary of GoHub)',
     logo: IMAGES.gohub,
-    position: 'Senior Software Engineer',
-    duration: 'December 2025 - Present',
-    current: true,
+    position: 'Senior Software Engineer & Team Lead',
+    duration: 'December 2025 - June 2026',
     description:
-      'Led and executed multiple enterprise-grade projects concurrently across the GoHub ecosystem, acting as technical lead and hands-on senior engineer. Responsible for architecture decisions, delivery timelines, and mentoring junior developers while maintaining high code quality across systems.',
+      'Led and executed multiple enterprise-grade public transportation projects across the GoHub ecosystem as technical lead and hands-on senior engineer. Responsible for architecture decisions, delivery timelines, and mentoring junior developers. Role concluded in June 2026 to lead Nasa Def full-time.',
     tech: ['.NET (C#)', 'Enterprise Systems', 'REST APIs', 'Reporting', 'SQL'],
   },
   {
@@ -42,8 +65,7 @@ export const experienceData = [
     company: 'Nasa Def Sdn Bhd',
     logo: IMAGES.nasadef,
     position: 'Chief Inventor & Founder',
-    duration: 'July 2024 - Present',
-    current: true,
+    duration: 'July 2024 - June 2026',
     description:
       'Leading comprehensive IoT product development specifically designed for the agriculture sector, with a focus on smart vibration sensors and intelligent monitoring systems.',
     tech: ['IoT', 'Smart Sensors', 'AI/ML'],
