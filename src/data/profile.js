@@ -2,15 +2,25 @@
 // contact, footer and SEO blocks.
 import { IMAGES } from '../config/imageConfig.js'
 
+const BIRTH_DATE = new Date(1986, 10, 25) // 25 November 1986
+
+function ageFrom(birth) {
+  const now = new Date()
+  const hadBirthday =
+    now.getMonth() > birth.getMonth() ||
+    (now.getMonth() === birth.getMonth() && now.getDate() >= birth.getDate())
+  return now.getFullYear() - birth.getFullYear() - (hadBirthday ? 0 : 1)
+}
+
 export const profile = {
   name: 'Nik Mohd Shafik Izwan',
   shortName: 'Nik Shafik',
   title: 'CEO & Founder | Technology Leader | AI Innovator',
   tagline:
     'Transforming industries through AI-driven solutions and IoT innovation. Building the future with 13+ years of technology expertise.',
-  role: 'Founder & CEO',
+  role: 'CEO — Nasa Def Sdn Bhd & Izwan Systec Enterprise',
   image: IMAGES.profile,
-  age: 38,
+  age: ageFrom(BIRTH_DATE),
   location: 'Seri Kembangan, Selangor',
   phone: '017-4511455',
   phoneIntl: '+60 17-451 1455',
@@ -38,6 +48,7 @@ export const heroStats = [
 
 export const aboutBio = [
   'With over 13 years of experience in system development, ERP implementation, and emerging technologies, I specialize in creating AI-driven solutions that transform traditional industries. As the founder of two technology companies, I have dedicated my career to building innovative products that solve real-world problems.',
+  'Today I lead full-time as CEO of both Nasa Def Sdn Bhd and Izwan Systec Enterprise, delivering nationwide AI + IoT deployments for plantation and agriculture clients such as FELDA and TDM Plantation.',
   'My expertise spans full-stack development, IoT systems, artificial intelligence, and enterprise solutions. I have successfully led teams in developing cutting-edge products for agriculture, security, and disaster management sectors.',
 ]
 

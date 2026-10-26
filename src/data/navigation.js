@@ -6,6 +6,7 @@
 export const primaryLinks = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
+  { id: 'projects', label: 'Projects' },
   { id: 'products', label: 'Products' },
   { id: 'contact', label: 'Contact' },
 ]
@@ -24,6 +25,7 @@ export const navLinks = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
   { id: 'leadership', label: 'Leadership' },
+  { id: 'projects', label: 'Projects' },
   { id: 'companies', label: 'Companies' },
   { id: 'products', label: 'Products' },
   { id: 'clients', label: 'Clients' },

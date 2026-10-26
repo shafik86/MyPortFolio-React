@@ -14,6 +14,7 @@ export default function CompanyCard({ company }) {
         </div>
 
         <div className="company-meta">
+          {company.myRole && <div><i className="bi bi-person-badge" /> {company.myRole}</div>}
           <div><i className="bi bi-calendar" /> {company.founded}</div>
           <div><i className="bi bi-card-text" /> {company.ssm}</div>
           <div><i className="bi bi-geo-alt" /> {company.location}</div>
