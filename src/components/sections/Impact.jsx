@@ -22,7 +22,7 @@ export default function Impact() {
         <div className="section-head reveal">
           <span className="eyebrow">By the Numbers</span>
           <h2>Growth &amp; Impact</h2>
-          <p>A snapshot of what has been built across the ecosystem</p>
+          <p>What Nasa Def and Izwan Systec are delivering on the ground today</p>
         </div>
 
         <div className="impact-grid">

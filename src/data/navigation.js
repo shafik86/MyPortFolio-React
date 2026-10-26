@@ -5,6 +5,7 @@
 // is the full ordered list (used by scroll-spy and the mobile menu).
 export const primaryLinks = [
   { id: 'home', label: 'Home' },
+  { id: 'projects', label: 'Projects' },
   { id: 'about', label: 'About' },
   { id: 'products', label: 'Products' },
   { id: 'contact', label: 'Contact' },
@@ -22,6 +23,7 @@ export const moreLinks = [
 // Full ordered list — keep in render order for scroll-spy.
 export const navLinks = [
   { id: 'home', label: 'Home' },
+  { id: 'projects', label: 'Projects' },
   { id: 'about', label: 'About' },
   { id: 'leadership', label: 'Leadership' },
   { id: 'companies', label: 'Companies' },

@@ -1,6 +1,7 @@
 import { useReveal } from '../hooks/useReveal'
 
 import Hero from '../components/sections/Hero'
+import CurrentProjects from '../components/sections/CurrentProjects'
 import About from '../components/sections/About'
 import Leadership from '../components/sections/Leadership'
 import Impact from '../components/sections/Impact'
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <CurrentProjects />
       <About />
       <Leadership />
       <Impact />

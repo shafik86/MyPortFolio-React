@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7cc4f2"/>
+      <stop offset="0.7" stop-color="#cfeafb"/>
+      <stop offset="1" stop-color="#eef8ff"/>
+    </linearGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6fae5a"/>
+      <stop offset="1" stop-color="#5a9a48"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5cb547"/>
+      <stop offset="1" stop-color="#3c8f2e"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.82" cy="0.18" r="0.35">
+      <stop offset="0" stop-color="#fffbe6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fffbe6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#sky)"/>
+  <rect width="800" height="400" fill="url(#sun)"/>
+
+  <!-- clouds -->
+  <g fill="#fff" opacity="0.85">
+    <ellipse cx="150" cy="70" rx="60" ry="16"/>
+    <ellipse cx="185" cy="60" rx="38" ry="18"/>
+    <ellipse cx="520" cy="95" rx="70" ry="14"/>
+    <ellipse cx="555" cy="86" rx="40" ry="15"/>
+  </g>
+
+  <!-- distant tree line -->
+  <path fill="#4f8a43" opacity="0.75"
+        d="M0 250 q20-24 40-6 q18-28 42-4 q22-22 44 0 q24-30 50-2 q20-20 40 2 q24-26 50-2 q18-22 40 0 q26-28 52 0 q22-24 44 0 q20-26 46-2 q24-20 46 2 q22-28 48 0 q20-22 44 0 q22-26 48 0 q18-20 38 2 q24-24 48 0 V400 H0 Z"/>
+
+  <!-- rolling hills -->
+  <path fill="url(#far)" d="M0 275 C150 240 280 265 400 258 C540 250 650 232 800 262 V400 H0 Z"/>
+  <path fill="url(#near)" d="M0 310 C140 285 300 300 420 296 C560 292 690 280 800 300 V400 H0 Z"/>
+
+  <!-- grass tufts -->
+  <g stroke="#2f7a24" stroke-width="2.4" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M40 360 l-6-18 M44 360 l2-22 M48 360 l8-16"/>
+    <path d="M140 375 l-5-16 M144 375 l1-20 M148 375 l7-14"/>
+    <path d="M250 352 l-6-17 M254 352 l2-21 M258 352 l8-15"/>
+    <path d="M540 368 l-6-18 M544 368 l2-22 M548 368 l8-16"/>
+    <path d="M650 350 l-5-16 M654 350 l1-20 M658 350 l7-14"/>
+    <path d="M745 372 l-6-17 M749 372 l2-21 M753 372 l8-15"/>
+  </g>
+</svg>

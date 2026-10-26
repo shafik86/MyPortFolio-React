@@ -1,6 +1,45 @@
 import { IMAGES } from '../config/imageConfig.js'
 
+// Newest engagements first.
 export const clientsData = [
+  {
+    id: 7,
+    name: 'FELDA',
+    logo: IMAGES.felda,
+    industry: 'Federal Land Development Authority',
+    project: 'Nationwide Farm Guard Rollout',
+    description:
+      'Supplying 97 Farm Guard units to 42 FELDA schemes across Peninsular Malaysia and Sabah.',
+    tech: ['Farm Guard', 'IoT Sensors', 'Remote Monitoring'],
+  },
+  {
+    id: 8,
+    name: 'TDM Plantation',
+    logo: IMAGES.tdm,
+    industry: 'Plantation & Agriculture',
+    project: 'Starlink-Connected Farm Guard AI',
+    description:
+      'Farm Guard AI with Starlink connectivity for Ladang Pelung, Jernih and Air Putih.',
+    tech: ['Farm Guard AI', 'Starlink', 'AI Detection'],
+  },
+  {
+    id: 9,
+    name: 'JPG',
+    logo: IMAGES.jpg,
+    industry: 'Johor Plantations Group (JCorp)',
+    project: 'Plantation Security Solutions',
+    description: 'AI and IoT security solutions for plantation operations.',
+    tech: ['IoT', 'AI Detection'],
+  },
+  {
+    id: 10,
+    name: 'KPF',
+    logo: IMAGES.kpf,
+    industry: 'Koperasi Permodalan FELDA',
+    project: 'Technology Solutions',
+    description: 'Technology and system solutions delivered by Nasa Def.',
+    tech: ['IoT', 'Systems'],
+  },
   {
     id: 1,
     name: 'SBTAPE Sdn Bhd',

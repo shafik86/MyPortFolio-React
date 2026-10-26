@@ -1,4 +1,4 @@
-import { profile, aboutBio, aboutHighlights } from '../../data/profile'
+import { profile, aboutBio, aboutHighlights, getAge } from '../../data/profile'
 import SectionHead from '../common/SectionHead'
 
 export default function About() {
@@ -21,7 +21,7 @@ export default function About() {
               <div><i className="bi bi-geo-alt" /> {profile.location}</div>
               <div><i className="bi bi-telephone" /> {profile.phone}</div>
               <div><i className="bi bi-envelope" /> {profile.emails[0]}</div>
-              <div><i className="bi bi-cake2" /> {profile.age} Years Old</div>
+              <div><i className="bi bi-cake2" /> {getAge(profile)} Years Old</div>
             </div>
           </div>
 

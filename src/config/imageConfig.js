@@ -27,6 +27,7 @@ export const IMAGES = {
   nasadef: img('nasadef_logo.png'),
   nasadefWhite: img('nasadef_logo_white.png'),
   isystec: img('isystec_logo.png'),
+  isystecHorizontal: img('isystec_logo_horizontal.png'),
 
   // Logos - Clients
   sbtape: img('sbtape_logo.png'),
@@ -35,6 +36,10 @@ export const IMAGES = {
   rela: img('rela_logo.png'),
   felcra: img('felcra_logo.png'),
   tradewinds: img('tradewinds_logo.png'),
+  felda: img('felda_logo.png'),
+  tdm: img('TDM_logo.png'),
+  jpg: img('JPG_logo.png'),
+  kpf: img('kpf_logo.png'),
 
   // Logos - Experience
   gohub: img('gohub_logo.png'),
@@ -51,6 +56,10 @@ export const IMAGES = {
   wildsec: img('Products/wildsec design.png'),
   floodsense: img('Products/floodsense_product.png'),
   pistolgajah: img('Products/pistolgajah_product.png'),
+  cctv: img('Products/CCTV.png'),
+
+  // Current projects
+  feldaMap: img('Projects/felda_farmguard_map.png'),
 }
 
 export default { img, IMAGES, BASE_PATH }

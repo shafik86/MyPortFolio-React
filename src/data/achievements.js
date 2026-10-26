@@ -47,13 +47,13 @@ export const achievementsData = [
   },
   {
     id: 5,
-    title: 'Senior Software Engineer — GoHub Ecosystem',
-    category: 'Recognition',
-    date: '2025-12',
-    year: 2025,
-    issuer: 'TCT Apps (GoHub)',
+    title: 'Nationwide Farm Guard Rollout — FELDA',
+    category: 'Milestone',
+    date: '2026-10',
+    year: 2026,
+    issuer: 'Nasa Def Sdn Bhd',
     description:
-      'Appointed technical lead across multiple enterprise-grade projects within the GoHub ecosystem.',
-    icon: 'bi-award',
+      'Secured supply of 97 Farm Guard units to 42 FELDA schemes across Peninsular Malaysia and Sabah.',
+    icon: 'bi-geo-alt',
   },
 ]

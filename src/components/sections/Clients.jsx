@@ -1,5 +1,9 @@
 import { clientsData } from '../../data/clients'
 import SectionHead from '../common/SectionHead'
+import LoopCarousel from '../common/LoopCarousel'
+
+// Cards visible at once for a given carousel width.
+const perViewFor = (w) => (w >= 1000 ? 5 : w >= 760 ? 4 : w >= 560 ? 3 : w >= 360 ? 2 : 1)
 
 export default function Clients() {
   return (
@@ -11,33 +15,27 @@ export default function Clients() {
           subtitle="Trusted by leading organizations across Malaysia"
         />
 
-        <div className="grid grid-3">
-          {clientsData.map((c, i) => (
-            <div key={c.id} className={`reveal delay-${(i % 3) + 1}`}>
-              <div className="card client-card">
-                <div className="logo-frame">
-                  <img src={c.logo} alt={c.name} />
-                </div>
-                <div className="card-body">
-                  <h5 className="gradient-text" style={{ marginBottom: '0.1rem' }}>{c.name}</h5>
-                  <small className="muted">{c.industry}</small>
-                  <h6 style={{ margin: '0.8rem 0 0.3rem' }}>{c.project}</h6>
-                  <p className="muted" style={{ fontSize: '0.85rem' }}>{c.description}</p>
-                  {c.link && (
-                    <p style={{ fontSize: '0.82rem', marginBottom: '0.6rem' }}>
-                      <i className="bi bi-link-45deg" style={{ color: 'var(--tech-blue)' }} /> {c.link}
-                    </p>
-                  )}
-                  <div className="chips">
-                    {c.tech.map((t) => (
-                      <span key={t} className="chip chip--neutral">{t}</span>
-                    ))}
-                  </div>
-                </div>
+        <LoopCarousel
+          className="client-carousel reveal"
+          label="clients"
+          items={clientsData}
+          perViewFor={perViewFor}
+          renderItem={(c) => (
+            <div className="card cc-card">
+              <div className="logo-frame cc-logo">
+                <img src={c.logo} alt={c.name} draggable={false} />
+              </div>
+              <div className="cc-body">
+                <h5>{c.name}</h5>
+                <p>{c.project}</p>
               </div>
             </div>
-          ))}
-        </div>
+          )}
+        />
+
+        <p className="cc-hint">
+          <i className="bi bi-arrows" /> Drag or use the arrows to browse {clientsData.length} clients
+        </p>
       </div>
     </section>
   )

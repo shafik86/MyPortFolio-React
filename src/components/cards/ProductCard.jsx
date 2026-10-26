@@ -1,7 +1,7 @@
 export default function ProductCard({ product }) {
   return (
     <div className="card product-card">
-      <div className="logo-frame img-frame">
+      <div className={`logo-frame img-frame ${product.photo ? 'img-frame--photo' : ''}`}>
         <img src={product.image} alt={product.name} />
       </div>
       <div className="card-body">

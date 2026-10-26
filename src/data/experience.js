@@ -1,22 +1,45 @@
 import { IMAGES } from '../config/imageConfig.js'
 
-// Ordered most-recent first. `index` is the timeline node number shown on screen.
+// Current CEO roles first (Nasa Def, then Izwan Systec), then most-recent first. `index` is the timeline node number shown on screen.
 export const experienceData = [
+  {
+    id: 9,
+    index: '09',
+    company: 'Nasa Def Sdn Bhd',
+    logo: IMAGES.nasadef,
+    position: 'Founder & CEO',
+    duration: 'July 2024 - Present',
+    current: true,
+    description:
+      'Leading the company end to end — strategy, client relationships and product direction for AI and IoT security solutions. Driving nationwide Farm Guard deployments for major plantation operators while still steering product architecture hands-on.',
+    tech: ['Leadership', 'IoT', 'AI/ML', 'Business Development'],
+  },
   {
     id: 8,
     index: '08',
+    company: 'Izwan Systec Enterprise',
+    logo: IMAGES.isystecHorizontal,
+    position: 'Founder & CEO',
+    duration: 'March 2021 - Present',
+    current: true,
+    description:
+      'Running the R&D and technology innovation hub behind the Nasa Def ecosystem — prototyping new devices, AI research and custom system development.',
+    tech: ['R&D', 'Prototyping', 'AI Research', 'System Development'],
+  },
+  {
+    id: 7,
+    index: '07',
     company: 'TCT Apps (Subsidiary of GoHub)',
     logo: IMAGES.gohub,
     position: 'Senior Software Engineer',
-    duration: 'December 2025 - Present',
-    current: true,
+    duration: 'December 2025 - June 2026',
     description:
       'Led and executed multiple enterprise-grade projects concurrently across the GoHub ecosystem, acting as technical lead and hands-on senior engineer. Responsible for architecture decisions, delivery timelines, and mentoring junior developers while maintaining high code quality across systems.',
     tech: ['.NET (C#)', 'Enterprise Systems', 'REST APIs', 'Reporting', 'SQL'],
   },
   {
-    id: 7,
-    index: '07',
+    id: 6,
+    index: '06',
     company: 'Asolute Sdn Bhd',
     logo: IMAGES.asolute,
     position: 'Software Engineer',
@@ -26,8 +49,8 @@ export const experienceData = [
     tech: ['Full-Stack', 'ERP', 'Mobile Apps'],
   },
   {
-    id: 6,
-    index: '06',
+    id: 5,
+    index: '05',
     company: 'HPCS Sdn Bhd',
     logo: IMAGES.hpcs,
     position: 'Back-End Developer',
@@ -35,18 +58,6 @@ export const experienceData = [
     description:
       'Specialized in building highly scalable and efficient billing system components using .NET Core 6 and RESTful APIs. Operated with minimal supervision while maintaining excellent code quality.',
     tech: ['.NET Core 6', 'REST APIs', 'Billing'],
-  },
-  {
-    id: 5,
-    index: '05',
-    company: 'Nasa Def Sdn Bhd',
-    logo: IMAGES.nasadef,
-    position: 'Chief Inventor & Founder',
-    duration: 'July 2024 - Present',
-    current: true,
-    description:
-      'Leading comprehensive IoT product development specifically designed for the agriculture sector, with a focus on smart vibration sensors and intelligent monitoring systems.',
-    tech: ['IoT', 'Smart Sensors', 'AI/ML'],
   },
   {
     id: 4,

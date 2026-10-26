@@ -103,5 +103,22 @@ export const productsData = [
     sector: 'Agriculture',
     link: 'https://nasadef.com.my/index.html#contact',
   },
+  {
+    id: 7,
+    name: 'Solar CCTV',
+    category: 'Dual-Lens Solar Surveillance',
+    image: IMAGES.cctv,
+    photo: true, // real site photo — fill the frame instead of padding it
+    description:
+      'Solar-powered dual-camera CCTV built for plantations. Runs up to 10 days without sun and can be viewed remotely from anywhere.',
+    features: [
+      'Solar Powered',
+      '10-Day Battery Backup',
+      'Dual Cam — Main View Always in Focus',
+      'Remote Live View',
+    ],
+    status: 'Active',
+    sector: 'Security',
+    link: 'https://nasadef.com.my/index.html#contact',
+  },
 ]
-
